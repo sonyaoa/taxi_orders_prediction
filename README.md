@@ -1,29 +1,29 @@
-# Project: Taxi Demand Forecasting
+# Проект: Прогнозирование заказов такси
 
-## Description
-This project focuses on forecasting the number of taxi orders at airports for the next hour, enabling optimized driver allocation during peak demand periods.
+## Описание
+Проект посвящён прогнозированию количества заказов такси в аэропортах на следующий час для оптимизации распределения водителей в периоды повышенного спроса.
 
-## Goal
-Build a taxi demand forecasting model to:
-- Plan driver shifts in advance
-- Reduce customer wait times
-- Improve service quality and resource efficiency
+## Цель исследования
+Построить модель прогнозирования количества заказов такси, которая позволит:
+- заранее планировать количество водителей на сменах;
+- сократить время ожидания клиентов;
+- повысить качество сервиса и эффективность использования ресурсов.
 
-## Workflow
-- Data preprocessing and time series analysis
-- Exploratory Data Analysis (EDA): trend and seasonality analysis
-- Feature Engineering: lag features and rolling statistics
-- Model training and comparison:
-   - Hyperparameter tuning with GridSearchCV and TimeSeriesSplit
-   - Model evaluation by RMSE, training time, and inference time
-   - Selection of the optimal forecasting model
-- Conclusions and recommendations
+## Ход исследования
+- Предобработка данных и анализ временного ряда.
+- Исследовательский анализ данных (EDA): изучение тренда и сезонности.
+- Feature Engineering: создание лаговых признаков и скользящих статистик.
+- Моделирование:
+   - Подбор гиперпараметров с использованием GridSearchCV и TimeSeriesSplit.
+   - Оценка моделей по метрике RMSE, времени обучения и времени предсказания.
+   - Выбор оптимальной модели для прогнозирования.
+- Итоговые выводы и рекомендации заказчику.
 
-## Technologies
-Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, LightGBM, Time Series Analysis
+## Технологии
+Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, LightGBM, Time Series Analysis.
 
-## Key Results
-- Identified strong daily and weekly demand patterns in taxi orders
-- Built and compared Linear Regression, Decision Tree, and LightGBM models
-- Best model — Linear Regression: RMSE = 34.24 on the test set, well below the required threshold of 48
-- Developed a model applicable to real-time driver allocation and demand planning
+## Ключевые результаты
+- Выявлены выраженные суточные и недельные паттерны спроса на такси.
+- Построены и сравнены модели Linear Regression, Decision Tree и LightGBM.
+- Лучшая модель — Linear Regression: RMSE на тестовой выборке = 34.24, что значительно ниже порогового значения (48).
+- Разработана модель, позволяющая прогнозировать спрос и более эффективно распределять водителей.
